@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ICP_Hub_Zimbabwe_backend": {
+      "main": "src/ICP_Hub_Zimbabwe_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICP_Hub_Zimbabwe_frontend": {
+      "dependencies": [
+        "ICP_Hub_Zimbabwe_backend"
+      ],
+      "source": [
+        "src/ICP_Hub_Zimbabwe_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ICP_Hub_Zimbabwe_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
