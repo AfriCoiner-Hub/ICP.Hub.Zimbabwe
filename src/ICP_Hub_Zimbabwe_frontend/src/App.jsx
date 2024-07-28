@@ -1,30 +1,25 @@
-import { useState } from 'react';
-import { ICP_Hub_Zimbabwe_backend } from 'declarations/ICP_Hub_Zimbabwe_backend';
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Team from "./components/Team";
+import About from "./pages/About";
+import Services from "./components/Service";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [greeting, setGreeting] = useState('');
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    ICP_Hub_Zimbabwe_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
 
   return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
+    <div className="overflow-x-hidden">
+      <Navbar />
+      <main className="flex-grow">
+        <Home />
+      </main>
+      <About />
+      <Services />
+      <Team />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
