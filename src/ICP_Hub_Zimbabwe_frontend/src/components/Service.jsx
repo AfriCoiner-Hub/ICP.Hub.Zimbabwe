@@ -4,15 +4,24 @@ import { faSearch, faComments, faBullhorn, faIdBadge, faWallet, faFilter } from 
 
 function Services() {
     return (
-      <div
+      <section
         id="services"
-        className="section relative pt-10 pb-8 md:pt-16 md:pb-0 bg-slate-500"
+        className="relative h-screen overflow-hidden flex pt-10 pb-8 md:pt-16 md:pb-0 bg-slate-900"
       >
-        <div className="container justify-between items-center flex mx-auto">
+        <video
+          className="absolute top-0 left-0 w-full h-full"
+          autoPlay
+          loop
+          muted
+        >
+          <source src="./assets/final_no_audio.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="relative container justify-between items-center flex mb-12 mx-auto z-10 px-20 bg-opacity-50 bg-black rounded-lg">
           {/* Heading start */}
           <div>
             <header className="text-center mx-auto mb-12 lg:px-20">
-              <h2 className="text-4xl leading-normal mb-2 font-bold text-black dark:text-slate-100">
+              <h2 className="text-6xl leading-normal mb-2 font-bold text-black dark:text-slate-100">
                 What We Do
               </h2>
               <svg
@@ -221,7 +230,7 @@ function Services() {
             {/* end row */}
           </div>
         </div>
-      </div>
+      </section>
     );
 }
 
