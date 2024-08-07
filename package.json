@@ -14,5 +14,9 @@
   "type": "module",
   "workspaces": [
     "src/ICP_Hub_Zimbabwe_frontend"
-  ]
+  ],
+  "dependencies": {
+    "@headlessui/react": "^2.1.2",
+    "@heroicons/react": "^2.1.5"
+  }
 }
