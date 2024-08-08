@@ -38,12 +38,18 @@ export default function Contact() {
       .then(
         () => {
           console.log('SUCCESS!');
+          clearForm();
         },
         (error) => {
           console.log('FAILED...', error.text);
+          clearForm();
         },
       );
   };
+
+  const clearForm = () => {
+    form.current.reset();
+  }
 
   return (
     <div className="relative isolate bg-white">
