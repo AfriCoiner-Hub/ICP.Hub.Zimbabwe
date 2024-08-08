@@ -16,6 +16,7 @@
     "src/ICP_Hub_Zimbabwe_frontend"
   ],
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5"
   }
