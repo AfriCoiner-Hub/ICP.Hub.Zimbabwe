@@ -2,27 +2,27 @@ import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from
 
 const features = [
     {
-        name: 'Push to deploy',
+        name: 'Why deploy on IC',
         description:
-        'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+        'Deploying an Application on the Internet Computer is easy and cheaper to maintain.',
         icon: CloudArrowUpIcon,
     },
     {
         name: 'SSL certificates',
         description:
-        'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+        'When making request to external services, all nodes in the subnetwork must have the same result for authenticity.',
         icon: LockClosedIcon,
     },
     {
-        name: 'Simple queues',
+        name: 'Cycles',
         description:
-        'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+        'In order to host your Application on the Internet Computer you need to have cycles.',
         icon: ArrowPathIcon,
     },
     {
         name: 'Advanced security',
         description:
-        'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+        'Application is on the Internet Computer is run on Cryptography that means you do not have to worry about adding firewall.',
         icon: FingerPrintIcon,
     },
 ]
@@ -37,8 +37,7 @@ export default function Example() {
                 Everything you need to deploy your app
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-                Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-                pulvinar et feugiat blandit at. In mi viverra elit nunc.
+               Benefits for deploying on the Internet Computer. 
             </p>
             </div>
             <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
